@@ -1,0 +1,148 @@
+/* ============================================================
+   RTL.CSS — Right-to-Left Overrides Only
+   Applied when <html dir="rtl"> is set
+   ============================================================ */
+
+[dir="rtl"] .nav-logo-text { letter-spacing: 0; }
+
+/* Navbar underline animation origin */
+[dir="rtl"] .nav-links a::after {
+  transform-origin: inset-inline-start;
+}
+
+/* Drawer slides from left in RTL */
+[dir="rtl"] .nav-drawer {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .nav-drawer.active {
+  transform: translateX(0);
+}
+
+/* Service card left border flips to right */
+[dir="rtl"] .service-card::before {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+/* Hero scroll indicator center stays centered */
+[dir="rtl"] .hero-scroll {
+  transform: translateX(50%);
+}
+
+/* About badge positioning */
+[dir="rtl"] .about-image-badge {
+  inset-inline-end: auto;
+  inset-inline-start: -1rem;
+}
+
+/* Blog single sidebar sticky */
+[dir="rtl"] .blog-sidebar {
+  top: calc(var(--nav-height) + 1.5rem);
+}
+
+/* Timeline direction flips */
+[dir="rtl"] .timeline::before {
+  background: linear-gradient(to bottom, var(--color-secondary), rgba(201,169,110,0.1));
+}
+
+[dir="rtl"] .timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+[dir="rtl"] .timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Article blockquote border side */
+[dir="rtl"] .article-content blockquote {
+  border-inline-start: none;
+  border-inline-end: 3px solid var(--color-secondary);
+  padding-inline-start: 0;
+  padding-inline-end: 1.5rem;
+}
+
+/* Drawer links padding direction */
+[dir="rtl"] .drawer-links a:hover,
+[dir="rtl"] .drawer-links a.active {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1.5rem;
+}
+
+/* Hero2 overlay gradient flips */
+[dir="rtl"] .hero2-img-overlay {
+  background: linear-gradient(to left, var(--color-bg) 0%, transparent 25%);
+}
+
+/* Tab panel animation direction */
+[dir="rtl"] .tab-panel {
+  animation-name: fadeInRTL;
+}
+
+@keyframes fadeInRTL {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Active tab border side */
+[dir="rtl"] .tab-btn.active {
+  border-inline-start: none;
+  border-inline-end: 2px solid var(--color-secondary);
+}
+
+/* Form row labels & inputs inherit dir naturally via logical properties */
+/* Checkbox alignment */
+[dir="rtl"] .checkbox-group input[type="checkbox"] {
+  margin-top: 3px;
+}
+
+/* Footer social row direction */
+[dir="rtl"] .footer-social {
+  flex-direction: row-reverse;
+}
+
+/* Methodology line flips */
+[dir="rtl"] .methodology-steps::before {
+  background: linear-gradient(to left, var(--color-secondary), rgba(201,169,110,0.2));
+}
+
+/* Scrollbar on drawer */
+[dir="rtl"] .nav-drawer { scrollbar-width: thin; }
+
+/* Value items */
+[dir="rtl"] .value-item:hover {
+  padding-inline-start: 0.5rem;
+}
+
+/* Case card result icons */
+[dir="rtl"] .case-result { flex-direction: row-reverse; }
+
+/* Responsive RTL adjustments */
+@media (max-width: 1024px) {
+  [dir="rtl"] .nav-drawer {
+    inset-inline-end: auto;
+    inset-inline-start: 0;
+    transform: translateX(-100%);
+  }
+
+  [dir="rtl"] .nav-drawer.active {
+    transform: translateX(0);
+  }
+
+  [dir="rtl"] .timeline-item,
+  [dir="rtl"] .timeline-item:nth-child(odd),
+  [dir="rtl"] .timeline-item:nth-child(even) {
+    flex-direction: row;
+  }
+
+  [dir="rtl"] .timeline::before {
+    inset-inline-start: auto;
+    inset-inline-end: 16px;
+  }
+
+  [dir="rtl"] .hero2-img-overlay {
+    background: linear-gradient(to top, var(--color-bg), transparent);
+  }
+}

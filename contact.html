@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Apex Consulting | Schedule a Strategy Session</title>
+  <meta name="description" content="Get in touch with Apex Consulting to discuss your strategic challenge. Schedule a complimentary 60-minute strategy session with one of our senior partners.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C9A96E'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia' font-size='18' font-weight='600' fill='%230A0F1E'>A</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+</head>
+<body>
+
+<header class="navbar" role="banner" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Apex Consulting Home"><div class="nav-logo-mark">A</div><span class="nav-logo-text">Apex<span>.</span></span></a>
+    <nav aria-label="Main navigation"><ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="home2.html">Home 2</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">Industries</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Insights</a></li><li><a href="contact.html" class="active">Contact</a></li>
+    </ul></nav>
+    <div class="nav-actions">
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<nav class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <div class="drawer-header"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">A</div><span class="nav-logo-text">Apex<span>.</span></span></a><button class="drawer-close" id="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button></div>
+  <div class="drawer-links">
+    <a href="index.html"><i class="ph ph-house"></i>Home</a><a href="home2.html"><i class="ph ph-squares-four"></i>Home 2</a><a href="services.html"><i class="ph ph-briefcase"></i>Services</a><a href="about.html"><i class="ph ph-buildings"></i>Industries</a><a href="about.html"><i class="ph ph-info"></i>About Us</a><a href="blog.html"><i class="ph ph-newspaper"></i>Insights</a><a href="contact.html"><i class="ph ph-envelope"></i>Contact</a><a href="login.html"><i class="ph ph-sign-in"></i>Login</a>
+  </div>
+  <div class="drawer-footer">
+    <button class="theme-toggle" style="flex:1;border:1.5px solid var(--color-border);border-radius:var(--radius);height:44px;gap:0.5rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-label);font-size:0.875rem;color:var(--color-text);"><i class="ph ph-moon"></i><span>Theme</span></button>
+    <button class="rtl-toggle" style="flex:1;border:1.5px solid var(--color-border);border-radius:var(--radius);height:44px;gap:0.5rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-label);font-size:0.875rem;color:var(--color-text);"><i class="ph ph-arrows-left-right"></i><span>RTL</span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="contact-page-heading">
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><i class="ph ph-caret-right"></i><span aria-current="page">Contact</span></nav>
+    <h1 id="contact-page-heading">Let's Start a<br>Conversation</h1>
+    <p>Every great engagement begins with an honest conversation. Tell us about your challenge—we'll share our initial thinking, free of charge.</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Contact form and details">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div>
+        <div class="contact-form-wrap">
+          <div style="margin-bottom:var(--space-4);">
+            <div class="section-label" style="justify-content:flex-start;">Consultation Request</div>
+            <h2 style="font-size:var(--size-h3);">Request a Free<br>Strategy Session</h2>
+            <p>Complete the form below. A senior partner will respond within one business day.</p>
+          </div>
+          <form id="contact-form" novalidate aria-label="Consultation request form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="James" autocomplete="given-name" required aria-required="true" aria-describedby="firstName-error">
+                <p class="field-error" id="firstName-error" role="alert"></p>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Harrington" autocomplete="family-name" required aria-required="true" aria-describedby="lastName-error">
+                <p class="field-error" id="lastName-error" role="alert"></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Business Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="james@company.com" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                <p class="field-error" id="email-error" role="alert"></p>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (212) 555-0100" autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company">Company / Organization <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="Meridian Capital Group" autocomplete="organization" required aria-required="true" aria-describedby="company-error">
+                <p class="field-error" id="company-error" role="alert"></p>
+              </div>
+              <div class="form-group">
+                <label for="service">Area of Interest</label>
+                <select id="service" name="service" class="form-control">
+                  <option value="">Select a service...</option>
+                  <option value="strategy">Corporate Strategy</option>
+                  <option value="operations">Operational Excellence</option>
+                  <option value="digital">Digital Transformation</option>
+                  <option value="financial">Financial Advisory</option>
+                  <option value="change">Change Management</option>
+                  <option value="esg">ESG & Sustainability</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Challenge <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Describe your strategic challenge, the scope of your organization, and what success would look like for you..." required aria-required="true" aria-describedby="message-error"></textarea>
+              <p class="field-error" id="message-error" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;" id="contact-submit-btn">
+              <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+              Send Request
+            </button>
+            <div class="form-success" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="ph ph-map-pin" aria-hidden="true"></i></div>
+          <div class="contact-info-text">
+            <h4>Global Headquarters</h4>
+            <p>One Financial Center, Suite 3200<br>New York, NY 10001, USA</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="ph ph-phone" aria-hidden="true"></i></div>
+          <div class="contact-info-text">
+            <h4>Phone</h4>
+            <p><a href="tel:+12125550190">+1 (212) 555-0190</a> (New York)<br><a href="tel:+442079460100">+44 (20) 7946-0100</a> (London)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="ph ph-envelope" aria-hidden="true"></i></div>
+          <div class="contact-info-text">
+            <h4>Email</h4>
+            <p><a href="mailto:hello@apexconsulting.com">hello@apexconsulting.com</a><br><a href="mailto:careers@apexconsulting.com">careers@apexconsulting.com</a></p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="ph ph-clock" aria-hidden="true"></i></div>
+          <div class="contact-info-text">
+            <h4>Business Hours</h4>
+            <p>Monday – Friday: 8:00 AM – 7:00 PM EST<br>We respond to all inquiries within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-placeholder" aria-label="Office location map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1542246018375!2d-74.01330648459407!3d40.70886647933144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2276de7ee3%3A0x88a35a16f42cb7d5!2sOne%20Financial%20Center%2C%20New%20York%2C%20NY%2010281!5e0!3m2!1sen!2sus!4v1700000000000"
+            title="Apex Consulting Office Location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+
+        <!-- Social -->
+        <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4);">
+          <h4 style="font-size:1.125rem;margin-bottom:var(--space-2);">Connect with Us</h4>
+          <div style="display:flex;gap:0.5rem;">
+            <a href="#" class="social-link" aria-label="LinkedIn" style="border-color:var(--color-border);"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-link" aria-label="X" style="border-color:var(--color-border);"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook" style="border-color:var(--color-border);"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube" style="border-color:var(--color-border);"><i class="ph ph-youtube-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Global Offices -->
+<section class="section bg-surface" aria-labelledby="offices-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Global Presence</div>
+      <h2 id="offices-heading">Our Global Offices</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);">
+      <div class="contact-info-card reveal" style="flex-direction:column;align-items:flex-start;">
+        <div style="font-family:var(--font-label);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin-bottom:0.25rem;">Americas</div>
+        <h4 style="font-size:1.0625rem;">New York</h4>
+        <p style="font-size:var(--size-caption);">+1 (212) 555-0190<br>hello.nyc@apexconsulting.com</p>
+      </div>
+      <div class="contact-info-card reveal reveal-delay-1" style="flex-direction:column;align-items:flex-start;">
+        <div style="font-family:var(--font-label);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin-bottom:0.25rem;">Europe</div>
+        <h4 style="font-size:1.0625rem;">London</h4>
+        <p style="font-size:var(--size-caption);">+44 (20) 7946-0100<br>hello.ldn@apexconsulting.com</p>
+      </div>
+      <div class="contact-info-card reveal reveal-delay-2" style="flex-direction:column;align-items:flex-start;">
+        <div style="font-family:var(--font-label);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin-bottom:0.25rem;">Asia-Pacific</div>
+        <h4 style="font-size:1.0625rem;">Singapore</h4>
+        <p style="font-size:var(--size-caption);">+65 6850-0200<br>hello.sg@apexconsulting.com</p>
+      </div>
+      <div class="contact-info-card reveal reveal-delay-3" style="flex-direction:column;align-items:flex-start;">
+        <div style="font-family:var(--font-label);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-secondary);margin-bottom:0.25rem;">Middle East</div>
+        <h4 style="font-size:1.0625rem;">Dubai</h4>
+        <p style="font-size:var(--size-caption);">+971 4 550 0300<br>hello.dxb@apexconsulting.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" style="display:inline-flex;"><div class="nav-logo-mark">A</div><span class="nav-logo-text" style="color:#fff;">Apex<span>.</span></span></a><p>A global management consulting firm committed to delivering lasting impact.</p><nav class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a><a href="#" class="social-link" aria-label="X"><i class="ph ph-x-logo"></i></a><a href="#" class="social-link" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a><a href="#" class="social-link" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a></nav></div>
+      <div class="footer-col"><h5>Services</h5><nav class="footer-links"><a href="services.html">Corporate Strategy</a><a href="services.html">Operational Excellence</a><a href="services.html">Digital Transformation</a><a href="services.html">Financial Advisory</a><a href="services.html">Change Management</a></nav></div>
+      <div class="footer-col"><h5>Company</h5><nav class="footer-links"><a href="about.html">About Apex</a><a href="about.html">Our Team</a><a href="about.html">Industries</a><a href="blog.html">Insights</a><a href="contact.html">Careers</a></nav></div>
+      <div class="footer-col"><h5>Contact</h5><address style="font-style:normal;"><div class="footer-contact-item"><i class="ph ph-map-pin"></i><span>One Financial Center, Suite 3200<br>New York, NY 10001</span></div><div class="footer-contact-item"><i class="ph ph-phone"></i><a href="tel:+12125550190">+1 (212) 555-0190</a></div><div class="footer-contact-item"><i class="ph ph-envelope"></i><a href="mailto:hello@apexconsulting.com">hello@apexconsulting.com</a></div></address></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Apex Consulting Group LLC. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Cookie Settings</a></nav></div>
+  </div>
+</footer>
+
+<style>
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+@media(max-width:768px){[style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important;}}
+@media(max-width:480px){[style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr!important;}}
+</style>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+</body>
+</html>

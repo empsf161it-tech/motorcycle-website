@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Portal Login | Apex Consulting</title>
+  <meta name="description" content="Access the Apex Consulting client portal for proprietary benchmarking, strategic roadmaps, and executive advisory workspaces.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C9A96E'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia' font-size='18' font-weight='600' fill='%230A0F1E'>A</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+</head>
+<body>
+
+<div class="auth-top-actions">
+  <a href="index.html" class="auth-top-btn" aria-label="Return to Homepage">
+    <i class="ph ph-arrow-left" aria-hidden="true"></i>
+    <span>Home</span>
+  </a>
+  <button class="rtl-toggle auth-top-btn" aria-label="Toggle RTL layout" title="Toggle RTL">
+    <i class="ph ph-arrows-left-right" aria-hidden="true"></i>
+  </button>
+  <button class="theme-toggle auth-top-btn" aria-label="Toggle dark mode">
+    <i class="ph ph-moon" aria-hidden="true"></i>
+  </button>
+</div>
+
+<main class="auth-page">
+  <!-- Left Column: High-End Brand Panel -->
+  <div class="auth-brand-panel">
+    <div class="auth-brand-content">
+      <a href="index.html" class="nav-logo" aria-label="Apex Consulting Home" style="display:inline-flex;margin-bottom:var(--space-4);">
+        <div class="nav-logo-mark" aria-hidden="true">A</div>
+        <span class="nav-logo-text" style="color:#ffffff;">Apex<span>.</span></span>
+      </a>
+
+      <div class="section-badge" style="color:var(--color-secondary);margin-bottom:var(--space-2);">
+        <i class="ph ph-shield-check" aria-hidden="true"></i> Executive Advisory Portal
+      </div>
+
+      <h2>Empowering Confident Decisions at Global Scale</h2>
+      <p>Secure client intelligence, real-time portfolio analytics, and dedicated strategic collaboration tools built for enterprise leaders.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1.5rem;margin-top:var(--space-6);margin-bottom:var(--space-6);border-top:1px solid rgba(255,255,255,0.1);padding-top:var(--space-4);">
+        <div>
+          <div style="font-family:var(--font-heading);font-size:2rem;color:var(--color-secondary);font-weight:600;line-height:1;">98%</div>
+          <div style="font-family:var(--font-label);font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.06em;margin-top:0.25rem;">Client Retention</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-heading);font-size:2rem;color:var(--color-secondary);font-weight:600;line-height:1;">$4.2B+</div>
+          <div style="font-family:var(--font-label);font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.06em;margin-top:0.25rem;">Value Unlocked</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-heading);font-size:2rem;color:var(--color-secondary);font-weight:600;line-height:1;">40+</div>
+          <div style="font-family:var(--font-label);font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.06em;margin-top:0.25rem;">Countries Served</div>
+        </div>
+      </div>
+
+      <div class="auth-testimonial">
+        <p>"Apex transformed our operational infrastructure, unlocking $140M in trapped enterprise value within 18 months."</p>
+        <div class="auth-testimonial-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Jonathan Vance" loading="lazy" width="36" height="36">
+          <div>
+            <strong style="display:block;color:#fff;font-size:0.875rem;">Jonathan Vance</strong>
+            <span>Chief Operating Officer, Global Capital Partners</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Interactive Auth Form Panel -->
+  <div class="auth-form-panel">
+    <div class="auth-form-wrap">
+      
+      <!-- Tab Switcher -->
+      <div class="auth-tabs" role="tablist" aria-label="Authentication Options">
+        <button class="auth-tab-btn active" data-auth-target="auth-login" role="tab" aria-selected="true" aria-controls="auth-login" id="tab-login">
+          Sign In
+        </button>
+        <button class="auth-tab-btn" data-auth-target="auth-register" role="tab" aria-selected="false" aria-controls="auth-register" id="tab-register">
+          Create Account
+        </button>
+      </div>
+
+      <!-- ── LOGIN FORM CONTAINER ──────────────────────────────── -->
+      <div id="auth-login" class="auth-form-container active" role="tabpanel" aria-labelledby="tab-login">
+        <h1>Welcome Back</h1>
+        <p>Sign in with your enterprise credentials to access your advisory workspace.</p>
+
+        <!-- Social SSO -->
+        <div class="social-auth">
+          <button type="button" class="social-auth-btn" aria-label="Sign in with Google Workspace">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            Continue with Google
+          </button>
+          <button type="button" class="social-auth-btn" aria-label="Sign in with Microsoft 365">
+            <svg width="18" height="18" viewBox="0 0 23 23" aria-hidden="true"><path fill="#f35325" d="M1 1h10v10H1z"/><path fill="#81bc06" d="M12 1h10v10H12z"/><path fill="#05a6f0" d="M1 12h10v10H1z"/><path fill="#ffba08" d="M12 12h10v10H12z"/></svg>
+            Continue with Microsoft
+          </button>
+        </div>
+
+        <div class="divider">
+          <span>or continue with email</span>
+        </div>
+
+        <form id="login-form" novalidate aria-label="Client Portal Login">
+          <div class="form-group">
+            <label for="login-email">Business Email <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="login-email" name="email" class="form-control" placeholder="name@company.com" autocomplete="username" required aria-required="true" aria-describedby="login-email-error">
+            <p class="field-error" id="login-email-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password <span class="required" aria-hidden="true">*</span></label>
+            <div class="password-input-wrap">
+              <input type="password" id="login-password" name="password" class="form-control" placeholder="••••••••••••" autocomplete="current-password" required aria-required="true" aria-describedby="login-password-error">
+              <button type="button" class="password-toggle" data-target="login-password" aria-label="Toggle password visibility">
+                <i class="ph ph-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="field-error" id="login-password-error" role="alert"></p>
+          </div>
+
+          <div class="auth-row-between">
+            <div class="checkbox-group" style="margin-bottom:0;">
+              <input type="checkbox" id="rememberMe" name="rememberMe" checked>
+              <label for="rememberMe">Remember this browser</label>
+            </div>
+            <a href="#forgot" class="auth-forgot-link" onclick="alert('Password reset link sent to your registered enterprise email.');return false;">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:var(--space-2);" id="login-submit-btn">
+            <i class="ph ph-sign-in" aria-hidden="true"></i>
+            Sign In to Portal
+          </button>
+
+          <div class="form-success" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="auth-switch">
+          Need portal access? 
+          <a href="#register" onclick="document.querySelector('[data-auth-target=\'auth-register\']')?.click();return false;">Create an account</a>
+        </div>
+      </div>
+
+      <!-- ── REGISTER FORM CONTAINER ───────────────────────────── -->
+      <div id="auth-register" class="auth-form-container" role="tabpanel" aria-labelledby="tab-register">
+        <h1>Create Account</h1>
+        <p>Register with your executive work email to unlock advisory benchmark tools.</p>
+
+        <!-- Social SSO -->
+        <div class="social-auth">
+          <button type="button" class="social-auth-btn" aria-label="Register with Google Workspace">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            Sign up with Google
+          </button>
+          <button type="button" class="social-auth-btn" aria-label="Register with Microsoft 365">
+            <svg width="18" height="18" viewBox="0 0 23 23" aria-hidden="true"><path fill="#f35325" d="M1 1h10v10H1z"/><path fill="#81bc06" d="M12 1h10v10H12z"/><path fill="#05a6f0" d="M1 12h10v10H1z"/><path fill="#ffba08" d="M12 12h10v10H12z"/></svg>
+            Sign up with Microsoft
+          </button>
+        </div>
+
+        <div class="divider">
+          <span>or create with business email</span>
+        </div>
+
+        <form id="register-form" novalidate aria-label="Client Registration Form">
+          <div class="form-group">
+            <label for="reg-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="reg-name" name="name" class="form-control" placeholder="E.g. Katherine Vance" autocomplete="name" required aria-required="true" aria-describedby="reg-name-error">
+            <p class="field-error" id="reg-name-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email">Business Email <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="reg-email" name="email" class="form-control" placeholder="name@enterprise.com" autocomplete="email" required aria-required="true" aria-describedby="reg-email-error">
+            <p class="field-error" id="reg-email-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-password">Password (min 8 chars) <span class="required" aria-hidden="true">*</span></label>
+            <div class="password-input-wrap">
+              <input type="password" id="reg-password" name="password" class="form-control" placeholder="••••••••••••" autocomplete="new-password" required aria-required="true" aria-describedby="reg-password-error">
+              <button type="button" class="password-toggle" data-target="reg-password" aria-label="Toggle password visibility">
+                <i class="ph ph-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="field-error" id="reg-password-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-confirm">Confirm Password <span class="required" aria-hidden="true">*</span></label>
+            <div class="password-input-wrap">
+              <input type="password" id="reg-confirm" name="confirmPassword" class="form-control" placeholder="••••••••••••" autocomplete="new-password" required aria-required="true" aria-describedby="reg-confirm-error">
+              <button type="button" class="password-toggle" data-target="reg-confirm" aria-label="Toggle password visibility">
+                <i class="ph ph-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="field-error" id="reg-confirm-error" role="alert"></p>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required aria-required="true">
+            <label for="terms">
+              I agree to the <a href="contact.html">Terms of Advisory Service</a> and acknowledge the <a href="contact.html">Enterprise Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:var(--space-2);" id="register-submit-btn">
+            <i class="ph ph-user-plus" aria-hidden="true"></i>
+            Create Executive Account
+          </button>
+
+          <div class="form-success" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="auth-switch">
+          Already registered? 
+          <a href="#login" onclick="document.querySelector('[data-auth-target=\'auth-login\']')?.click();return false;">Sign in</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

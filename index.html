@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Consulting | Strategic Business Solutions</title>
+  <meta name="description" content="Apex Consulting delivers world-class strategy, operations, and digital transformation consulting to leading enterprises across 40+ countries.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C9A96E'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia' font-size='18' font-weight='600' fill='%230A0F1E'>A</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Apex Consulting",
+    "url": "https://apexconsulting.com",
+    "logo": "https://apexconsulting.com/assets/img/logo.png",
+    "description": "Strategic business consulting firm specializing in strategy, operations, and digital transformation.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "One Financial Center, Suite 3200",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-212-555-0190",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────────────────── -->
+<header class="navbar" role="banner" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Apex Consulting Home">
+      <div class="nav-logo-mark" aria-hidden="true">A</div>
+      <span class="nav-logo-text">Apex<span>.</span></span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">Industries</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL">
+        <i class="ph ph-arrows-left-right" aria-hidden="true"></i>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="ph ph-moon" aria-hidden="true"></i>
+      </button>
+      <a href="login.html" class="btn btn-primary btn-sm" id="nav-login-btn">Login</a>
+      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Drawer Overlay -->
+<div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+
+<!-- Mobile Drawer -->
+<nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation" role="dialog" aria-modal="true">
+  <div class="drawer-header">
+    <a href="index.html" class="nav-logo" aria-label="Apex Consulting">
+      <div class="nav-logo-mark">A</div>
+      <span class="nav-logo-text">Apex<span>.</span></span>
+    </a>
+    <button class="drawer-close" aria-label="Close navigation menu" id="drawer-close">
+      <i class="ph ph-x" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="drawer-links" role="list">
+    <a href="index.html" role="listitem"><i class="ph ph-house" aria-hidden="true"></i>Home</a>
+    <a href="home2.html" role="listitem"><i class="ph ph-squares-four" aria-hidden="true"></i>Home 2</a>
+    <a href="services.html" role="listitem"><i class="ph ph-briefcase" aria-hidden="true"></i>Services</a>
+    <a href="about.html" role="listitem"><i class="ph ph-buildings" aria-hidden="true"></i>Industries</a>
+    <a href="about.html" role="listitem"><i class="ph ph-info" aria-hidden="true"></i>About Us</a>
+    <a href="blog.html" role="listitem"><i class="ph ph-newspaper" aria-hidden="true"></i>Insights</a>
+    <a href="contact.html" role="listitem"><i class="ph ph-envelope" aria-hidden="true"></i>Contact</a>
+    <a href="login.html" role="listitem"><i class="ph ph-sign-in" aria-hidden="true"></i>Login</a>
+  </div>
+
+  <div class="drawer-footer">
+    <button class="theme-toggle" aria-label="Toggle dark mode" style="flex:1; border:1.5px solid var(--color-border); border-radius:var(--radius); height:44px; gap:0.5rem; display:flex; align-items:center; justify-content:center; font-family:var(--font-label); font-size:0.875rem; color:var(--color-text);">
+      <i class="ph ph-moon" aria-hidden="true"></i> <span>Theme</span>
+    </button>
+    <button class="rtl-toggle" aria-label="Toggle RTL" style="flex:1; border:1.5px solid var(--color-border); border-radius:var(--radius); height:44px; gap:0.5rem; display:flex; align-items:center; justify-content:center; font-family:var(--font-label); font-size:0.875rem; color:var(--color-text);">
+      <i class="ph ph-arrows-left-right" aria-hidden="true"></i> <span>RTL</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<main id="main-content">
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" role="img" aria-label="Modern office building"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape hero-shape-3"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <i class="ph ph-star-four" aria-hidden="true"></i>
+      Trusted by 200+ Global Enterprises
+    </div>
+    <h1>
+      We Turn Complex<br>
+      Challenges Into<br>
+      <em class="hero-typewriter" data-words='["Strategic Wins.","Lasting Growth.","Measurable Impact.","Competitive Edge."]'>Strategic Wins.</em>
+    </h1>
+    <p class="hero-desc">
+      Apex Consulting partners with C-suite leaders to unlock hidden value, accelerate transformation, and build organizations built to last in a rapidly evolving world.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">
+        <i class="ph ph-calendar-check" aria-hidden="true"></i>
+        Book a Consultation
+      </a>
+      <a href="services.html" class="btn btn-outline btn-lg">
+        Explore Services
+        <i class="ph ph-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ── TRUST STRIP ────────────────────────────────────────── -->
+<section class="trust-strip" aria-label="Trusted clients">
+  <div class="container">
+    <p class="trust-label">Trusted by the World's Leading Organizations</p>
+    <div class="trust-marquee" aria-hidden="true">
+      <!-- Duplicated for seamless loop -->
+      <div class="trust-item"><i class="ph ph-buildings"></i>Goldman Sachs</div>
+      <div class="trust-item"><i class="ph ph-airplane"></i>Airbus Group</div>
+      <div class="trust-item"><i class="ph ph-heartbeat"></i>Novartis AG</div>
+      <div class="trust-item"><i class="ph ph-cpu"></i>Siemens Digital</div>
+      <div class="trust-item"><i class="ph ph-chart-line"></i>BlackRock</div>
+      <div class="trust-item"><i class="ph ph-flask"></i>BASF SE</div>
+      <div class="trust-item"><i class="ph ph-globe"></i>Unilever Plc</div>
+      <div class="trust-item"><i class="ph ph-storefront"></i>Nestlé Global</div>
+      <!-- Duplicate -->
+      <div class="trust-item"><i class="ph ph-buildings"></i>Goldman Sachs</div>
+      <div class="trust-item"><i class="ph ph-airplane"></i>Airbus Group</div>
+      <div class="trust-item"><i class="ph ph-heartbeat"></i>Novartis AG</div>
+      <div class="trust-item"><i class="ph ph-cpu"></i>Siemens Digital</div>
+      <div class="trust-item"><i class="ph ph-chart-line"></i>BlackRock</div>
+      <div class="trust-item"><i class="ph ph-flask"></i>BASF SE</div>
+      <div class="trust-item"><i class="ph ph-globe"></i>Unilever Plc</div>
+      <div class="trust-item"><i class="ph ph-storefront"></i>Nestlé Global</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────────────────── -->
+<section class="section bg-surface" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">What We Do</div>
+      <h2 id="services-heading">Consulting Solutions<br>Built for Impact</h2>
+      <p>From strategy inception to full-scale execution, our practice areas are designed to address the most critical business imperatives of the modern enterprise.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal" aria-label="Corporate Strategy">
+        <div class="service-icon"><i class="ph ph-target" aria-hidden="true"></i></div>
+        <h3>Corporate Strategy</h3>
+        <p>Defining where to compete and how to win. We work with boards and executives to craft bold, evidence-based strategies that drive sustainable competitive advantage.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="service-card reveal reveal-delay-1" aria-label="Operational Excellence">
+        <div class="service-icon"><i class="ph ph-gear-six" aria-hidden="true"></i></div>
+        <h3>Operational Excellence</h3>
+        <p>Streamlining processes, eliminating waste, and building high-performance operating models that scale with the demands of a global marketplace.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="service-card reveal reveal-delay-2" aria-label="Digital Transformation">
+        <div class="service-icon"><i class="ph ph-lightning" aria-hidden="true"></i></div>
+        <h3>Digital Transformation</h3>
+        <p>Reimagining business through technology. We guide organizations from strategy through implementation across AI, cloud, and data ecosystems.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="service-card reveal" aria-label="Financial Advisory">
+        <div class="service-icon"><i class="ph ph-trend-up" aria-hidden="true"></i></div>
+        <h3>Financial Advisory</h3>
+        <p>Unlocking capital efficiency through M&A due diligence, cost optimization, performance management, and restructuring advisory for complex transactions.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="service-card reveal reveal-delay-1" aria-label="Change Management">
+        <div class="service-icon"><i class="ph ph-users-three" aria-hidden="true"></i></div>
+        <h3>Change Management</h3>
+        <p>Ensuring transformation initiatives land and stick. Our human-centered approach minimizes disruption while maximizing adoption and organizational resilience.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+      <article class="service-card reveal reveal-delay-2" aria-label="ESG & Sustainability">
+        <div class="service-icon"><i class="ph ph-leaf" aria-hidden="true"></i></div>
+        <h3>ESG & Sustainability</h3>
+        <p>Embedding environmental, social, and governance principles into core business strategy—turning compliance into competitive differentiation and lasting value creation.</p>
+        <a href="services.html" class="card-link">Explore service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT SPLIT ─────────────────────────────────────────── -->
+<section class="section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-split">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+             alt="Apex Consulting team in a strategic planning session"
+             loading="lazy" width="800" height="580">
+        <div class="about-image-badge">
+          <span class="badge-num">27+</span>
+          <span class="badge-text">Years of<br>Excellence</span>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-2">
+        <div class="section-label" style="justify-content:flex-start;">Our Story</div>
+        <h2 id="about-heading">Decades of Insight.<br>Unwavering Commitment.</h2>
+        <p class="lead">Founded in 1997, Apex Consulting has grown from a boutique strategy firm into a global advisory powerhouse with 1,400+ consultants across 28 offices worldwide.</p>
+        <p>We believe great consulting is about more than frameworks and reports—it's about building genuine partnerships, challenging assumptions, and staying accountable for real outcomes.</p>
+        <div class="values-list" role="list">
+          <div class="value-item" role="listitem">
+            <div class="value-icon"><i class="ph ph-handshake" aria-hidden="true"></i></div>
+            <div class="value-text">
+              <h4>Client Partnership</h4>
+              <p>Your success is our only metric. We build long-term relationships, not one-off engagements.</p>
+            </div>
+          </div>
+          <div class="value-item" role="listitem">
+            <div class="value-icon"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
+            <div class="value-text">
+              <h4>Rigorous Analysis</h4>
+              <p>Every recommendation is grounded in deep research, data, and tested frameworks.</p>
+            </div>
+          </div>
+          <div class="value-item" role="listitem">
+            <div class="value-icon"><i class="ph ph-chart-bar" aria-hidden="true"></i></div>
+            <div class="value-text">
+              <h4>Measurable Results</h4>
+              <p>We track, measure, and report the impact of every engagement against agreed KPIs.</p>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-primary" style="margin-top:0.5rem;">
+          <i class="ph ph-info" aria-hidden="true"></i>
+          Our Full Story
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ───────────────────────────────────────────────── -->
+<section class="stats-section section-sm" aria-labelledby="stats-heading">
+  <div class="container">
+    <h2 id="stats-heading" class="visually-hidden">Company Statistics</h2>
+    <div class="stats-grid" role="list">
+      <div class="stat-card reveal" role="listitem">
+        <span class="stat-number" data-target="1400" data-suffix="+">0</span>
+        <p class="stat-label">Expert Consultants</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-1" role="listitem">
+        <span class="stat-number" data-target="98" data-suffix="%">0</span>
+        <p class="stat-label">Client Retention Rate</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-2" role="listitem">
+        <span class="stat-number" data-target="40" data-suffix="+">0</span>
+        <p class="stat-label">Countries Served</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-3" role="listitem">
+        <span class="stat-number" data-target="3.2" data-suffix="B+">0</span>
+        <p class="stat-label">Value Created (USD)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CASE STUDIES ────────────────────────────────────────── -->
+<section class="section bg-surface" id="case-studies" aria-labelledby="cases-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Proven Results</div>
+      <h2 id="cases-heading">Success Stories That<br>Define Outcomes</h2>
+      <p>Real engagements. Real metrics. Explore how we've helped organizations unlock transformative growth.</p>
+    </div>
+    <div class="case-studies-wrapper">
+      <div class="case-studies-scroll" role="list" aria-label="Case studies">
+        <article class="case-card reveal" role="listitem">
+          <img class="case-card-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Global bank headquarters" loading="lazy" width="600" height="240">
+          <div class="case-card-body">
+            <p class="case-tag">Financial Services</p>
+            <h3>Restructuring a Global Bank's Operating Model</h3>
+            <p>Helped a top-10 global bank redesign its operating model, resulting in a leaner, more agile structure aligned with digital-first priorities.</p>
+            <div class="case-result">
+              <i class="ph ph-trend-up" aria-hidden="true"></i>
+              Outcome: <strong>$340M in annual cost savings</strong>
+            </div>
+          </div>
+        </article>
+        <article class="case-card reveal reveal-delay-1" role="listitem">
+          <img class="case-card-img" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Manufacturing plant floor" loading="lazy" width="600" height="240">
+          <div class="case-card-body">
+            <p class="case-tag">Manufacturing</p>
+            <h3>Digital Twin Deployment at Scale</h3>
+            <p>Implemented AI-powered digital twin technology across 14 manufacturing facilities, dramatically reducing downtime and quality defects.</p>
+            <div class="case-result">
+              <i class="ph ph-trend-up" aria-hidden="true"></i>
+              Outcome: <strong>47% reduction in unplanned downtime</strong>
+            </div>
+          </div>
+        </article>
+        <article class="case-card reveal reveal-delay-2" role="listitem">
+          <img class="case-card-img" src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600&q=80" alt="Hospital corridor" loading="lazy" width="600" height="240">
+          <div class="case-card-body">
+            <p class="case-tag">Healthcare</p>
+            <h3>Scaling a Hospital Network's Patient Experience</h3>
+            <p>Redesigned patient journey and care coordination protocols across a 22-hospital system, improving satisfaction scores and clinical outcomes.</p>
+            <div class="case-result">
+              <i class="ph ph-trend-up" aria-hidden="true"></i>
+              Outcome: <strong>34-point NPS improvement in 18 months</strong>
+            </div>
+          </div>
+        </article>
+        <article class="case-card reveal reveal-delay-3" role="listitem">
+          <img class="case-card-img" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" alt="E-commerce dashboard on screen" loading="lazy" width="600" height="240">
+          <div class="case-card-body">
+            <p class="case-tag">Retail & E-Commerce</p>
+            <h3>Omnichannel Strategy for a Retail Giant</h3>
+            <p>Developed and implemented a unified omnichannel commerce strategy that bridged digital and physical retail experiences for 8 million customers.</p>
+            <div class="case-result">
+              <i class="ph ph-trend-up" aria-hidden="true"></i>
+              Outcome: <strong>62% increase in digital revenue YoY</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ────────────────────────────────────────── -->
+<section class="section testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Client Voice</div>
+      <h2 id="testimonials-heading">What Our Clients Say</h2>
+      <p>Partnerships built on trust, delivered through impact.</p>
+    </div>
+    <div class="testimonials-carousel" aria-label="Client testimonials" role="region">
+      <div class="testimonials-track">
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p class="testimonial-text">"Apex didn't just deliver a report—they rolled up their sleeves alongside our team. The strategic clarity they brought transformed how our board thinks about growth, and the results speak for themselves."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="Portrait of James Harrington" class="author-avatar" loading="lazy" width="52" height="52">
+              <div class="author-info">
+                <p class="author-name">James Harrington</p>
+                <p class="author-role">CEO, Meridian Capital Group</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p class="testimonial-text">"Our digital transformation was stalling before Apex stepped in. Within six months, we had a clear roadmap, executive buy-in, and early wins on the board. They're a genuinely exceptional partner."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Portrait of Dr. Sarah Chen" class="author-avatar" loading="lazy" width="52" height="52">
+              <div class="author-info">
+                <p class="author-name">Dr. Sarah Chen</p>
+                <p class="author-role">Chief Digital Officer, HeliosHealth Systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p class="testimonial-text">"The Apex team brings an unusual combination of intellectual rigor and pragmatic execution. They don't just identify what needs to change—they stay with you until it's done and delivering."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&q=80" alt="Portrait of Marcus Oyelaran" class="author-avatar" loading="lazy" width="52" height="52">
+              <div class="author-info">
+                <p class="author-name">Marcus Oyelaran</p>
+                <p class="author-role">COO, Vantage Industrials Ltd.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls" aria-label="Carousel controls">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous testimonial">
+          <i class="ph ph-arrow-left" aria-hidden="true"></i>
+        </button>
+        <div class="carousel-dots" role="tablist" aria-label="Testimonial slides">
+          <button class="carousel-dot active" role="tab" aria-label="Testimonial 1" aria-selected="true"></button>
+          <button class="carousel-dot" role="tab" aria-label="Testimonial 2" aria-selected="false"></button>
+          <button class="carousel-dot" role="tab" aria-label="Testimonial 3" aria-selected="false"></button>
+        </div>
+        <button class="carousel-btn carousel-btn-next" aria-label="Next testimonial">
+          <i class="ph ph-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INDUSTRIES ──────────────────────────────────────────── -->
+<section class="section" id="industries" aria-labelledby="industries-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" aria-hidden="true">Our Expertise</div>
+      <h2 id="industries-heading">Industries We Serve</h2>
+      <p>Deep sector expertise across the industries that drive the global economy.</p>
+    </div>
+    <div class="industries-grid" role="list">
+      <div class="industry-card reveal" role="listitem">
+        <div class="industry-icon"><i class="ph ph-bank" aria-hidden="true"></i></div>
+        <h4>Financial Services</h4>
+        <p>Banking, insurance, asset management & fintech</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1" role="listitem">
+        <div class="industry-icon"><i class="ph ph-heartbeat" aria-hidden="true"></i></div>
+        <h4>Healthcare & Life Sciences</h4>
+        <p>Hospitals, pharma, medtech & biotech</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2" role="listitem">
+        <div class="industry-icon"><i class="ph ph-factory" aria-hidden="true"></i></div>
+        <h4>Advanced Manufacturing</h4>
+        <p>Automotive, aerospace & industrial goods</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-3" role="listitem">
+        <div class="industry-icon"><i class="ph ph-storefront" aria-hidden="true"></i></div>
+        <h4>Consumer & Retail</h4>
+        <p>FMCG, luxury brands & omnichannel commerce</p>
+      </div>
+      <div class="industry-card reveal" role="listitem">
+        <div class="industry-icon"><i class="ph ph-cpu" aria-hidden="true"></i></div>
+        <h4>Technology & Media</h4>
+        <p>Software, semiconductors & digital platforms</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-1" role="listitem">
+        <div class="industry-icon"><i class="ph ph-lightning" aria-hidden="true"></i></div>
+        <h4>Energy & Utilities</h4>
+        <p>Oil & gas, renewables & power infrastructure</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-2" role="listitem">
+        <div class="industry-icon"><i class="ph ph-globe" aria-hidden="true"></i></div>
+        <h4>Public Sector</h4>
+        <p>Government, defense & international development</p>
+      </div>
+      <div class="industry-card reveal reveal-delay-3" role="listitem">
+        <div class="industry-icon"><i class="ph ph-airplane" aria-hidden="true"></i></div>
+        <h4>Travel & Logistics</h4>
+        <p>Airlines, shipping & supply chain management</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ─────────────────────────────────────────── -->
+<section class="cta-banner section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content reveal">
+      <div class="section-label" style="color:rgba(201,169,110,0.8);" aria-hidden="true">Take the First Step</div>
+      <h2 id="cta-heading">Ready to Transform<br>Your Business?</h2>
+      <p>Schedule a complimentary 60-minute strategy session with one of our senior consultants. No obligations—just clarity.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          <i class="ph ph-calendar-check" aria-hidden="true"></i>
+          Schedule a Session
+        </a>
+        <a href="services.html" class="btn btn-outline btn-lg">
+          View All Services
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ─────────────────────────────────────────── -->
+<section class="newsletter-section section-sm" aria-labelledby="newsletter-heading">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h3 id="newsletter-heading">The Apex Insights Digest</h3>
+        <p>Strategy briefings, industry reports, and exclusive research—delivered monthly to 40,000+ executives.</p>
+      </div>
+      <form class="newsletter-form" aria-label="Newsletter subscription" novalidate>
+        <label for="newsletter-email" class="visually-hidden">Your email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Your business email" autocomplete="email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="Apex Consulting Home" style="display:inline-flex;">
+          <div class="nav-logo-mark">A</div>
+          <span class="nav-logo-text" style="color:#fff;">Apex<span>.</span></span>
+        </a>
+        <p>We are a global management consulting firm committed to delivering lasting impact for our clients across strategy, operations, and transformation.</p>
+        <nav class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter / X"><i class="ph ph-x-logo" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="ph ph-youtube-logo" aria-hidden="true"></i></a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <nav class="footer-links" aria-label="Services links">
+          <a href="services.html">Corporate Strategy</a>
+          <a href="services.html">Operational Excellence</a>
+          <a href="services.html">Digital Transformation</a>
+          <a href="services.html">Financial Advisory</a>
+          <a href="services.html">Change Management</a>
+          <a href="services.html">ESG & Sustainability</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <nav class="footer-links" aria-label="Company links">
+          <a href="about.html">About Apex</a>
+          <a href="about.html">Our Team</a>
+          <a href="about.html">Industries</a>
+          <a href="coming-soon.html">Intelligence Portal 2.0 <span style="font-size:0.7rem;background:var(--color-secondary);color:#0A0F1E;padding:2px 6px;border-radius:2px;font-weight:600;margin-inline-start:4px;">NEW</span></a>
+          <a href="blog.html">Insights</a>
+          <a href="contact.html">Careers</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address style="font-style:normal;">
+          <div class="footer-contact-item">
+            <i class="ph ph-map-pin" aria-hidden="true"></i>
+            <span>One Financial Center, Suite 3200<br>New York, NY 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ph ph-phone" aria-hidden="true"></i>
+            <a href="tel:+12125550190">+1 (212) 555-0190</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ph ph-envelope" aria-hidden="true"></i>
+            <a href="mailto:hello@apexconsulting.com">hello@apexconsulting.com</a>
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Apex Consulting Group LLC. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Settings</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+</style>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+</body>
+</html>
