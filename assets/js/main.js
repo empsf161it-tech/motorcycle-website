@@ -89,9 +89,10 @@ function updateRTLIcon(btn) {
 function initNavbar() {
   const navbar = document.querySelector('.navbar');
   const hamburger = document.querySelector('.hamburger');
-  const drawer = document.querySelector('.nav-drawer');
-  const overlay = document.querySelector('.drawer-overlay');
-  const drawerClose = document.querySelector('.drawer-close');
+  const drawer = document.getElementById('nav-drawer') || document.querySelector('.nav-drawer');
+  const overlay = document.getElementById('drawer-overlay') || document.querySelector('.drawer-overlay');
+  // Collect all .drawer-close buttons so every page works
+  const drawerCloseButtons = document.querySelectorAll('.drawer-close');
 
   if (!navbar) return;
 
@@ -107,17 +108,25 @@ function initNavbar() {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  // Hamburger
+  // Open drawer — hide the hamburger so its animated X doesn't appear as a 2nd close btn
   const openDrawer = () => {
-    hamburger?.classList.add('active');
+    if (hamburger) {
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.style.visibility = 'hidden';
+    }
     drawer?.classList.add('active');
     overlay?.classList.add('active');
     document.body.style.overflow = 'hidden';
-    drawerClose?.focus();
+    drawerCloseButtons[0]?.focus();
   };
 
   const closeDrawer = () => {
-    hamburger?.classList.remove('active');
+    if (hamburger) {
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.style.visibility = '';
+    }
     drawer?.classList.remove('active');
     overlay?.classList.remove('active');
     document.body.style.overflow = '';
@@ -126,7 +135,11 @@ function initNavbar() {
 
   hamburger?.addEventListener('click', openDrawer);
   overlay?.addEventListener('click', closeDrawer);
-  drawerClose?.addEventListener('click', closeDrawer);
+
+  // Wire up every .drawer-close button found on the page
+  drawerCloseButtons.forEach(btn => {
+    btn.addEventListener('click', closeDrawer);
+  });
 
   // Close on ESC
   document.addEventListener('keydown', e => {
@@ -495,3 +508,26 @@ function initAuthTabs() {
 }
 
 document.addEventListener('DOMContentLoaded', initAuthTabs);
+
+// -- Back to Top --------------------------------------------------------
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('backToTop');
+  if (!backToTopBtn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initBackToTop);
